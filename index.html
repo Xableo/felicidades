@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
     <style>
+    #container-video {
+        max-width: 80vw;
+    }
     video {
-        min-width: 80vw;
+        width: 100%;
     }
     </style>
 </head>
@@ -27,9 +30,11 @@
     </header><br>
     <div>
         <center>
-            <video id="video" controls poster="assets/img/6.jpg" loop autoplay>
+            <div id="container-video">
+            <video controls poster="assets/img/6.jpg" loop autoplay>
             <source src="video/Kany García - Confieso (Audio)(1080P_HD).mp4" type="video/mp4">
-          </video>
+            </video>
+            </div>
         </center>
         <script>
             window.addEventListener("scroll", function startVideo() {
